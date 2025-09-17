@@ -10,7 +10,7 @@ export default function game() {
   const citySfx = k.play("city", { volume: 0.2, loop: true });
   
   // Set gravity for the game environment
-  k.setGravity(9100); /// ПАРАМЕЕЕЕЕТР ГРАФИТАЦИИИИ ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ!
+  k.setGravity(91); /// ПАРАМЕЕЕЕЕТР ГРАФИТАЦИИИИ ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ!
 
   // Define background pieces and their initial positions for the scrolling effect
   const bgPieceWidth = 1920;
