@@ -93,7 +93,7 @@ export default function gameover(citySfx) {
 
   // Add the current rank text to the box
   currentRankBox.add([
-    k.text(currentRank, { font: "mania", size: 100 }),
+    k.text(currentRank, { font: "mania", size: 50 }),
     k.anchor("center"), // Center the text within the box
   ]);
 
