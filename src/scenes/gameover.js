@@ -51,7 +51,7 @@ export default function gameover(citySfx) {
       size: 64,
     }),
     k.anchor("center"), // Center the text
-    k.pos(k.center().x + 400, k.center().y - 200), // Position to the right
+    k.pos(k.center().x - 400, k.center().y - 200), // Position to the right
   ]);
 
   // Display the best score
@@ -61,7 +61,7 @@ export default function gameover(citySfx) {
       size: 64,
     }),
     k.anchor("center"), // Center the text
-    k.pos(k.center().x - 400, k.center().y - 200), // Position to the left
+    k.pos(k.center().x + 400, k.center().y - 200), // Position to the left
   ]);
 
 
@@ -101,7 +101,7 @@ export default function gameover(citySfx) {
   k.wait(1, () => {
     // Display instructions to restart the game
     k.add([
-      k.text("Нажмите пробел/кликните/коснитесь, чтобы начать снова", {
+      k.text("Нажмите пробел / кликните / коснитесь, чтобы начать снова", {
         font: "mania",
         size: 64,
       }),
