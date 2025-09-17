@@ -79,7 +79,7 @@ export default function game() {
       sonic.jump(); // Make Sonic jump
       scoreMultiplier += 1; // Increase score multiplier
       score += 10 * scoreMultiplier; // Update the score with the multiplier
-      scoreText.text = `SCORE : ${score}`; // Update the score display
+      scoreText.text = `СЧЕТ : ${score}`; // Update the score display
       // Display the score multiplier UI
       if (scoreMultiplier === 1)
         sonic.ringCollectUI.text = `+${10 * scoreMultiplier}`;
