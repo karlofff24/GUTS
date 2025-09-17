@@ -16,8 +16,8 @@ k.loadSprite("sonic", "graphics/sonic2.png", {
   sliceX: 8, // Number of frames in the X-axis
   sliceY: 2, // Number of frames in the Y-axis
   anims: {
-    run: { from: 0, to: 7, loop: true, speed: 10 }, // СКРОРОСТЬ СМЕНЫ АНИМАЦИИ БЕГА и СКОРОСТЬ САМОГО БЕГА ыыы
-    jump: { from: 8, to: 15, loop: true, speed: 5 }, // СКОРОСТЬ СМЕНЫ АНИМАЦИИ ПРЫЖКА и СКОРОСТЬ САМОЙ ПРЫЖКИ ыыы
+    run: { from: 0, to: 7, loop: true, speed: 30 }, // СКРОРОСТЬ СМЕНЫ АНИМАЦИИ БЕГА и СКОРОСТЬ САМОГО БЕГА ыыы
+    jump: { from: 8, to: 15, loop: true, speed: 100 }, // СКОРОСТЬ СМЕНЫ АНИМАЦИИ ПРЫЖКА и СКОРОСТЬ САМОЙ ПРЫЖКИ ыыы
   },
 });
 

@@ -34,7 +34,7 @@ export default function mainMenu() {
 
   // Add instructions to start the game
   k.add([
-    k.text("Нажмите пробел/кликните/коснитесь, чтобы играть йоу!", { font: "mania", size: 32 }),
+    k.text("Нажмите пробел / кликните / коснитесь, чтобы играть йоу!", { font: "mania", size: 32 }),
     k.anchor("center"), // Center the text
     k.pos(k.center().x, k.center().y - 200), // Position it near the center
   ]);
