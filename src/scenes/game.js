@@ -37,7 +37,7 @@ export default function game() {
 
   // Display control instructions on the screen
   const controlsText = k.add([
-    k.text("Нажмите пробел/кликните/коснитесь, чтобы прыгать!", { font: "mania", size: 64 }),
+    k.text("Нажмите пробел / кликните / коснитесь, чтобы прыгать!", { font: "mania", size: 64 }),
     k.anchor("center"),
     k.pos(k.center()),
   ]);
@@ -61,7 +61,7 @@ export default function game() {
     k.play("ring", { volume: 0.5 }); // Play ring collection sound
     k.destroy(ring); // Destroy the collected ring
     score++; // Increment the score
-    scoreText.text = `SCORE : ${score}`; // Update score display
+    scoreText.text = `СЧЕТ : ${score}`; // Update score display
     sonic.ringCollectUI.text = "+1"; // Show collected ring UI for a moment
     k.wait(1, () => {
       sonic.ringCollectUI.text = ""; // Clear the UI after 1 second
