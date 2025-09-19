@@ -65,7 +65,32 @@ export default function gameover(citySfx) {
   ]);
 
 
-  // Create a box to display the best rank
+
+
+
+   // **Refactored code for rank display:**
+  function displayRank(rank, boxXPosition, rankBoxId) {
+    // Determine the appropriate font size to fit the rank in the box
+    const maxBoxWidth = 400; // Maximum width of the box
+    const maxBoxHeight = 400; // Maximum height of the box
+    let fontSize = 100;      // Start with a default font size
+
+    // Create a temporary text object to measure width and height
+    const tempText = k.text(rank, { font: "mania", size: fontSize });
+
+    // Reduce the font size until the rank text fits within the box's dimensions
+    while (tempText.width() > maxBoxWidth || tempText.height() > maxBoxHeight) {
+      fontSize -= 5; // Reduce font size by 5 each iteration
+      if (fontSize <= 10) {   // Stop if it becomes too small to be legible
+        fontSize = 10;
+        break;                // Exit the loop
+      }
+      tempText.size = fontSize; // Update text object's size
+    }
+
+
+
+// Create a box to display the best rank
   const bestRankBox = k.add([
     k.rect(400, 400, { radius: 4 }), // Rounded rectangle
     k.color(0, 0, 0), // Black background
