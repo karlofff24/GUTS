@@ -13,7 +13,7 @@ export default function gameover(citySfx) {
   // Define the ranking grades and their corresponding score thresholds
   //ТУТ НАПИСАНЫ УРОВНИ РАНГА ПРОХОЖДЕНИЯ ЗА ОЧКИ
   const rankGrades = ["НОВИЧОК", "Ефрейтор", "ДЕЦЛ", "ФАНАТ САМСУНГА", "11Б КЛАСС", "ЧИТИНСКИЕ КЛЮЧИ", "СИГМА"];
-  const rankValues = [50, 80, 100, 200, 300, 400, 500];
+  const rankValues = [50, 80, 100, 200, 300, 4, 500];
 
   // Initialize ranks for the current and best scores
   let currentRank = "НОВИЧОК";
@@ -75,7 +75,7 @@ export default function gameover(citySfx) {
 
   // Add the best rank text to the box
   bestRankBox.add([
-    k.text(bestRank, { font: "mania", size: 100 }),
+    k.text(bestRank, { font: "mania", size: 40 }),
     k.anchor("center"), // Center the text within the box
   ]);
 
