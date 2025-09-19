@@ -43,6 +43,15 @@ export default function gameover(citySfx) {
     k.pos(k.center().x, k.center().y - 300), // Position near the top-center
   ]);
 
+  // Display the best score
+  k.add([
+    k.text(`ЛУЧШИЙ РЕКОРД : ${bestScore}`, {
+      font: "mania",
+      size: 64,
+    }),
+    k.anchor("center"), // Center the text
+    k.pos(k.center().x - 400, k.center().y - 200), // Position to the left
+  ]);
 
   // Display the current score
   k.add([
@@ -51,20 +60,10 @@ export default function gameover(citySfx) {
       size: 64,
     }),
     k.anchor("center"), // Center the text
-    k.pos(k.center().x - 400, k.center().y - 200), // Position to the right
+    k.pos(k.center().x + 400, k.center().y - 200), // Position to the right
   ]);
 
-  // Display the best score
-  k.add([
-    k.text(`ЛУЧШИЙ РЕКОРД : ${bestScore}`, {
-      font: "mania",
-      size: 64,
-    }),
-    k.anchor("center"), // Center the text
-    k.pos(k.center().x + 400, k.center().y - 200), // Position to the left
-  ]);
-
-// Create a box to display the best rank
+  // Create a box to display the best rank
   const bestRankBox = k.add([
     k.rect(400, 400, { radius: 4 }), // Rounded rectangle
     k.color(0, 0, 0), // Black background
@@ -76,7 +75,7 @@ export default function gameover(citySfx) {
 
   // Add the best rank text to the box
   bestRankBox.add([
-    k.text(bestRank, { font: "mania", size: 40 }),
+    k.text(bestRank, { font: "mania", size: 100 }),
     k.anchor("center"), // Center the text within the box
   ]);
 
