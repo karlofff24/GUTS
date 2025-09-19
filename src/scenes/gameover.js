@@ -76,7 +76,7 @@ export default function gameover(citySfx) {
 
   // Add the best rank text to the box
   bestRankBox.add([
-    k.text(bestRank, { font: "mania", size: 20 }),
+    k.text(bestRank, { font: "mania", size: 40 }),
     k.anchor("center"), // Center the text within the box
   ]);
 
